@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #282a36;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+h3 {
+    font-size: 20px;
+    color: #ff5555;
+}
+span {
+    color: #fff;
+}
+.container{
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 12px;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #44475a;
+    padding-block: 15px; 
+    border-bottom: 5px solid #f8f8f2;
+}
+.navbar a{
+    text-decoration: none;
+    color: #FFF;
+    margin-right: 20px;
+}
+.navbar a:hover {
+    border-bottom: 2px solid #ff5555;
+}
+.logo{
+    margin-right: 50px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px; 
+}
+.ri-menu-line::before {
+    color: #FFF;
+    font-size: 20px;
+}
+#toggler,
+.navbar label{
+    display: none;
+}
+@media screen and 
+(max-width: 600px){
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden; 
+    }
+    .list{
+        flex-direction: column; 
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex; 
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+}
