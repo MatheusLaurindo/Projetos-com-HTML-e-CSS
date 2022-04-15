@@ -1,0 +1,64 @@
+@import url('http://fonts.cdnfonts.com/css/gagalin');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    position: relative;
+}
+
+.area-de-conteudo {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e1111;
+    color: #fff;
+    font-size: 14px;
+}
+
+.area-de-conteudo > p {
+    margin: 40px;
+    border-bottom: 2px solid #B47F3F;
+}
+
+.area-de-conteudo > p > span {
+    color: #B47F3F;
+    font-weight: bold;
+}
+
+i {
+    color: #B47F3F;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: #232b2b;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.navegacao li {
+    padding: 15px 35px;
+}
+
+.navegacao li a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.navegacao li:hover {
+    background-color: #3b444b;
+}
+
+.navegacao li:hover a {
+    border-bottom: 2px solid #B47F3F;
+}
